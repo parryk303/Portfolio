@@ -51,17 +51,22 @@ export default function Home() {
           <Link href="mailto:kyle.parry.303@gmail.com">
             <img src="/images/email.png" alt="email" className="icon" />
           </Link>
-          Email
+          {/* Email */}
 
           <Link href="https://www.linkedin.com/in/parryk303/">
             <img src="/images/linkedin.png" alt="linkedin" className="icon" />
           </Link>
-          LinkedIn
+          {/* LinkedIn */}
 
           <Link href="https://github.com/parryk303">
             <img src="/images/github.png" alt="github" className="icon" />
           </Link>
-          GitHub
+          {/* GitHub */}
+
+          <Link href="https://www.facebook.com/profile.php?id=10238263">
+            <img src="/images/facebook.png" alt="facebook" className="icon" />
+          </Link>
+          {/* Facebook */}
         </h1>
       </footer>
 
