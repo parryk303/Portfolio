@@ -1,5 +1,8 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
-
-Set Up
+## Set Up ##
+> Run the following commands from the root of this repository
+```
 cd KyleParryPortfolio
+```
+```
 npm run dev
+```
