@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -12,9 +14,15 @@ export default function Home() {
         <h1 className="title">
           Kyle Parry
         </h1>
+        <Image
+          src="/images/profile.jpg" // Route of the image file
+          height={200} // Desired size with correct aspect ratio
+          width={200} // Desired size with correct aspect ratio
+          alt="Kyle Parry"
+        />
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
+          <a href="/about" className="card">
             <h3>About Me</h3>
           </a>
 
@@ -30,7 +38,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="/ski"
             className="card"
           >
             <h3>Ski Instructor</h3>
@@ -39,10 +47,22 @@ export default function Home() {
       </main>
 
       <footer>
-        <p>Contact Kyle{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </p>
+        <h1>
+          <Link href="mailto:kyle.parry.303@gmail.com">
+            <img src="/images/email.png" alt="email" className="icon" />
+          </Link>
+          Email
 
+          <Link href="https://www.linkedin.com/in/parryk303/">
+            <img src="/images/linkedin.png" alt="linkedin" className="icon" />
+          </Link>
+          LinkedIn
+
+          <Link href="https://github.com/parryk303">
+            <img src="/images/github.png" alt="github" className="icon" />
+          </Link>
+          GitHub
+        </h1>
       </footer>
 
       <style jsx>{`
@@ -100,7 +120,7 @@ export default function Home() {
         }
 
         .title {
-          margin: 0;
+          margin: 0 0 3rem 0;
           line-height: 1.15;
           font-size: 4rem;
         }
@@ -138,7 +158,7 @@ export default function Home() {
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
-          text-align: left;
+          text-align: center;
           color: inherit;
           text-decoration: none;
           border: 1px solid #eaeaea;
@@ -184,6 +204,8 @@ export default function Home() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+          background-image: url(/images/mountain.jpg);
+          background-size: cover;
         }
 
         * {
