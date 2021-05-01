@@ -1,20 +1,35 @@
-import Head from 'next/head'
 import Link from 'next/link'
+import Head from 'next/head'
 import Image from 'next/image'
 
-export default function Home() {
+export default function Bio() {
   return (
+
     <div className="container">
       <Head>
-        <title>Kyle Parry's Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>About Kyle Parry</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Fredericka+the+Great&family=Oswald:wght@600&display=swap" rel="stylesheet" />
       </Head>
-
+      <section>
+        <h2>
+          <Link href="/">
+            <a>home</a>
+          </Link>
+          <span> | </span>
+          <Link href="/projects">
+            <a>projects</a>
+          </Link>
+          <span> | </span>
+          <Link href="/blog">
+            <a>blog</a>
+          </Link>
+        </h2>
+      </section>
       <main>
+
         <h1 className="title">
-          Kyle Parry
+          About Me
         </h1>
         <Image
           src="/images/profile.jpg" // Route of the image file
@@ -23,20 +38,10 @@ export default function Home() {
           alt="Kyle Parry"
         />
 
-        <div className="grid">
-          <a href="/projects" className="card">
-            <h3>Projects</h3>
-          </a>
+        <p className="card">
+          Full Stack Front End developer proficient in Node.js, Express, React, MongoDB, PostgreSQL and MySQL || Seeking full-time opportunity
+        </p>
 
-          <a href="/bio" className="card">
-            <h3>Bio</h3>
-          </a>
-
-          <a href="/blog" className="card">
-            <h3>Blog</h3>
-          </a>
-
-        </div>
       </main>
 
       <footer>
@@ -126,8 +131,6 @@ export default function Home() {
         .title,
         .description {
           text-align: center;
-          font-family: 'Fredericka the Great', cursive;
-          color: navy;
         }
 
         .description {

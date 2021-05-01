@@ -1,40 +1,38 @@
-import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
+import Head from 'next/head'
 
-export default function Home() {
+export default function Blog() {
   return (
+
     <div className="container">
       <Head>
-        <title>Kyle Parry's Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Kyle Parry's Blog</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Fredericka+the+Great&family=Oswald:wght@600&display=swap" rel="stylesheet" />
       </Head>
 
       <main>
+        <section>
+          <h2>
+            <Link href="/">
+              <a>home</a>
+            </Link>
+            <span> | </span>
+            <Link href="/bio">
+              <a>bio</a>
+            </Link>
+            <span> | </span>
+            <Link href="/projects">
+              <a>projects</a>
+            </Link>
+          </h2>
+        </section>
+
         <h1 className="title">
-          Kyle Parry
+          Blog
         </h1>
-        <Image
-          src="/images/profile.jpg" // Route of the image file
-          height={200} // Desired size with correct aspect ratio
-          width={200} // Desired size with correct aspect ratio
-          alt="Kyle Parry"
-        />
 
         <div className="grid">
-          <a href="/projects" className="card">
-            <h3>Projects</h3>
-          </a>
-
-          <a href="/bio" className="card">
-            <h3>Bio</h3>
-          </a>
-
-          <a href="/blog" className="card">
-            <h3>Blog</h3>
-          </a>
 
         </div>
       </main>
@@ -126,8 +124,6 @@ export default function Home() {
         .title,
         .description {
           text-align: center;
-          font-family: 'Fredericka the Great', cursive;
-          color: navy;
         }
 
         .description {
@@ -203,7 +199,7 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: 'Electrolize', sans-serif;
+          font-family: 'Electrolize', sans-serif;font-family: 'Electrolize', sans-serif;
           background-image: url(/images/mountain.jpg);
           background-size: cover;
         }

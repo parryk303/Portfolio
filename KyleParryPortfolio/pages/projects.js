@@ -1,41 +1,59 @@
-import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
+import Head from 'next/head'
 
-export default function Home() {
+export default function AboutMe() {
   return (
+
     <div className="container">
       <Head>
         <title>Kyle Parry's Portfolio</title>
-        <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Fredericka+the+Great&family=Oswald:wght@600&display=swap" rel="stylesheet" />
       </Head>
 
       <main>
+        <section>
+          <h2>
+            <Link href="/">
+              <a>home</a>
+            </Link>
+            <span> | </span>
+            <Link href="/bio">
+              <a>bio</a>
+            </Link>
+            <span> | </span>
+            <Link href="/blog">
+              <a>blog</a>
+            </Link>
+          </h2>
+        </section>
+
         <h1 className="title">
-          Kyle Parry
+          Recent Projects
         </h1>
-        <Image
-          src="/images/profile.jpg" // Route of the image file
-          height={200} // Desired size with correct aspect ratio
-          width={200} // Desired size with correct aspect ratio
-          alt="Kyle Parry"
-        />
 
         <div className="grid">
-          <a href="/projects" className="card">
-            <h3>Projects</h3>
+          <a href="https://github.com/Breath-of-Fresh-AirBNB/Listing-Details" className="card">
+            <h3>Breath of Fresh AirBnB</h3>
           </a>
 
-          <a href="/bio" className="card">
-            <h3>Bio</h3>
+          <a href="https://coffee-roulette-kp.herokuapp.com/" className="card">
+            <h3>Coffee Roulette</h3>
           </a>
 
-          <a href="/blog" className="card">
-            <h3>Blog</h3>
+          <a
+            href="https://crypto-tracker-tool.herokuapp.com/"
+            className="card"
+          >
+            <h3>Crypto Tracker</h3>
           </a>
 
+          <a
+            href="https://victorian-twitter.herokuapp.com/"
+            className="card"
+          >
+            <h3>Victorian Twitter</h3>
+          </a>
         </div>
       </main>
 
@@ -126,8 +144,6 @@ export default function Home() {
         .title,
         .description {
           text-align: center;
-          font-family: 'Fredericka the Great', cursive;
-          color: navy;
         }
 
         .description {
