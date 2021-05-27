@@ -33,7 +33,7 @@ export default function AboutMe() {
         </h1>
 
         <div className="grid">
-          <a href="https://github.com/Breath-of-Fresh-AirBNB/Listing-Details" className="card">
+          <a href="http://18.219.18.51:3000/#/homes/1" className="card">
             <h3>Breath of Fresh AirBnB</h3>
           </a>
 
