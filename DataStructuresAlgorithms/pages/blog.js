@@ -40,19 +40,36 @@ export default function Blog() {
             <h2>Add Two Numbers</h2>
             <p>
               Problem:
-              <br/>
+              <br />
+              <br />
               You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
 
               You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-              <br/>
-              <br/>
-              I/O Examples:
+              <br />
+              <br />
+              IOEC:
+              <br />
+              Input: nums = [1,1,2] Output: 2, nums = [1,2]
+              <br />
+              Your function should return length = 2, with the first two elements of nums being 1 and 2 respectively. It doesn't matter what you leave beyond the returned length.
+              <br />
+              <br />
+              Input: nums = [0,0,1,1,1,2,2,3,3,4] Output: 5, nums = [0,1,2,3,4]
+              <br />
+              Explanation: Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively. It doesn't matter what values are set beyond the returned length.
+              <br />
+              Constraints: nums is sorted in ascending order.
 
-              <br/>
-              <br/>
+              <br />
+              <br />
               Solution:
+              <br />
+              <br />
+              <iframe src="https://www.thiscodeworks.com/embed/60b1508a4c1a9e0014da887e" style={{ height: "400px" }} frameborder="0" />
             </p>
           </div>
+
+
 
           {/* ----------------- BLOG LIST ----------------- */}
 
@@ -84,6 +101,9 @@ export default function Blog() {
       </footer>
 
       <style jsx>{`
+        iframe {
+          width: 100%;
+        }
         .blog{
           margin: 1rem;
           flex-basis: 95%;
